@@ -1,0 +1,32 @@
+####################################################
+#   Color mapping for PWFusion MCP960x library
+####################################################
+
+####################################################
+#   Classes (KEYWORD1)
+####################################################
+Mcp960x										KEYWORD1
+PWFusion_Mcp960x							KEYWORD1
+
+####################################################
+#   Functions (KEYWORD2)
+####################################################
+begin										KEYWORD2
+isConnected									KEYWORD2
+getThermocoupleTemp							KEYWORD2
+getColdJunctionTemp							KEYWORD2
+setMode										KEYWORD2
+setResolution								KEYWORD2
+setThermocoupleType							KEYWORD2
+setFilterCoeffecients						KEYWORD2
+beginBurst									KEYWORD2
+burstComplete								KEYWORD2
+getStatus									KEYWORD2
+writeByte									KEYWORD2
+writeWord									KEYWORD2
+readByte									KEYWORD2
+readWord									KEYWORD2
+
+####################################################
+#   Constants (LITERAL1)
+####################################################

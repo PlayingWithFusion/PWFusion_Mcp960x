@@ -7,6 +7,7 @@ Microchip MCP9601 Digital Thermocouple Interface Arduino Library, works for MCP9
 Example code provided to interface with SEN-30010 (all variants)
 
 [SEN-30010](http://www.playingwithfusion.com/productview.php?pdid=116): Single channel interface
+
 [SEN-30011](http://www.playingwithfusion.com/productview.php?pdid=118): Quad Channel board
 
 Usage

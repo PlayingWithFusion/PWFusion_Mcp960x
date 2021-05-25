@@ -222,13 +222,13 @@ uint8_t Mcp960x::readByte(Mcp960x_Reg reg)
 {
   uint8_t result = 0;
 
-  for (int i; i<4; i++)
+  for (int i=0; i<4; i++)
   {
     _i2cPort->beginTransmission(_addr);  
     _i2cPort->write(reg);         
     _i2cPort->endTransmission(false);  
 
-    if (_i2cPort->requestFrom(_addr, 1) != 0)
+    if (_i2cPort->requestFrom(_addr, (uint8_t)1) != 0)
     {
       result = _i2cPort->read();
       break;
@@ -244,13 +244,13 @@ uint16_t Mcp960x::readWord(Mcp960x_Reg reg)
 {
   uint16_t result = 0;
 
-  for (int i; i<4; i++)
+  for (int i=0; i<4; i++)
   {
     _i2cPort->beginTransmission(_addr);  
     _i2cPort->write(reg);         
     _i2cPort->endTransmission(false);  
 
-    if (_i2cPort->requestFrom(_addr, 2) != 0)
+    if (_i2cPort->requestFrom(_addr, (uint8_t)2) != 0)
     {
       result = (uint16_t)_i2cPort->read() << 8;
       result |= (uint16_t)_i2cPort->read();
